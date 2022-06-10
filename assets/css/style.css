@@ -1354,9 +1354,9 @@ transition: all 0.4 s;
     top: 4px;
 }
 
-.inline-search-area .form-control{
+/* .inline-search-area .form-control{
     border-right: solid 1px #5a5a5a !important;
-}
+} */
 
 /** Search area 4 start **/
 .search-area-4 .inline-search-area .bootstrap-select button {
@@ -8178,6 +8178,17 @@ footer {
         position: absolute;
         top: 106px;
         width: 100%;
+    }
+
+    .dacorate {
+        width: 100%;
+        padding: 10px 17px;
+        font-size: 13px;
+        border: 1px solid #e8e7e7;
+        outline: none;
+        color: #6c6c6c;
+        height: 45px !important;
+        border-radius: 2px;
     }
 
 

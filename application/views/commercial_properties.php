@@ -3,7 +3,7 @@
     <div class="row">
       <div class="col-lg-12 col-md-12">
         <?php if ($props): ?>
-        <div class="option-bar clearfix">
+        <!-- <div class="option-bar clearfix">
           <div class="sorting-options2">
             <?php $url = current_url(); $i = 0;
             foreach ($_GET as $k => $v):
@@ -37,7 +37,7 @@
             $s = 'Default';
             }
             $sort = array('Default Order'=>'latest_desc','Price: Low to High'=>'price_asc','Price High to Low'=>'price_desc','Product Name:A to Z'=>'name_asc','Product Name:Z to A'=>'name_desc')?>
-            <form method="GET" action="<?= $url ?>">
+            <form class="form-inline form-search" method="GET" action="<?= $url ?>">
               <span class="sort">Sort by:</span>
               <?php $i = 0;
               foreach ($_GET as $k => $v):
@@ -54,11 +54,291 @@
                 <option value="name_asc" <?= ($s == 'name_asc') ? 'selected' : '' ?>>Property Name:A to Z</option>
                 <option value="name_desc" <?= ($s == 'name_desc') ? 'selected' : '' ?>>Property Name:Z to A</option>
               </select>
-              <a href="javascript:;" class="btn btn-white btn-read-more">Rent</a>
-              <a href="javascript:;" class="btn btn-white btn-read-more">Sale</a>
+              
             </form>
           </div>
-        </div>
+        </div> -->
+
+        <div class="inline-search-area">
+   <ul class="nav nav-tabs" role="tablist">
+      <li class="nav-item">
+         <a class="nav-link active show" data-toggle="tab" href="#commercial">Commercial</a>
+      </li>
+      <li class="nav-item bv-tab-error">
+         <a class="nav-link" data-toggle="tab" href="#industrial">Industrial</a>
+      </li>
+      <li class="nav-item">
+         <a class="nav-link" data-toggle="tab" href="#residential">Residential</a>
+      </li>
+   </ul>
+   <div class="tab-content">
+   <div id="commercial" class="container tab-pane fade active show">
+         <br>
+         <div class="submit-address dashboard-list">
+                        <form method="GET">
+                            <div class="search-contents-sidebar">
+                                <div class="row pad-2">
+                                    <div class="col-lg-3 col-md-3 col-sm-12">
+                                    <div class="form-group">
+                                      <label for="inputState">Select State</label>
+                                      <select id="inputState" class="form-control dacorate">
+                                      <option value="">Select State</option>
+                                          <option value="ANDHRA PRADESH">ANDHRA PRADESH</option>
+                                          <option value="ASSAM">ASSAM</option>
+                                          <option value="ARUNACHAL PRADESH">ARUNACHAL PRADESH</option>
+                                          <option value="BIHAR">BIHAR</option>
+                                          <option value="GUJRAT">GUJRAT</option>
+                                          <option value="HARYANA">HARYANA</option>
+                                          <option value="HIMACHAL PRADESH">HIMACHAL PRADESH</option>
+                                          <option value="JAMMU &amp; KASHMIR">JAMMU &amp; KASHMIR</option>
+                                          <option value="KARNATAKA">KARNATAKA</option>
+                                          <option value="KERALA">KERALA</option>
+                                          <option value="MADHYA PRADESH">MADHYA PRADESH</option>
+                                          <option value="MAHARASHTRA">MAHARASHTRA</option>
+                                          <option value="MANIPUR">MANIPUR</option>
+                                          <option value="MEGHALAYA">MEGHALAYA</option>
+                                          <option value="MIZORAM">MIZORAM</option>
+                                          <option value="NAGALAND">NAGALAND</option>
+                                          <option value="ORISSA">ORISSA</option>
+                                          <option value="PUNJAB">PUNJAB</option>
+                                          <option value="RAJASTHAN">RAJASTHAN</option>
+                                          <option value="SIKKIM">SIKKIM</option>
+                                          <option value="TAMIL NADU">TAMIL NADU</option>
+                                          <option value="TRIPURA">TRIPURA</option>
+                                          <option value="UTTAR PRADESH">UTTAR PRADESH</option>
+                                          <option value="WEST BENGAL">WEST BENGAL</option>
+                                          <option value="DELHI">DELHI</option>
+                                          <option value="GOA">GOA</option>
+                                          <option value="PONDICHERY">PONDICHERY</option>
+                                          <option value="LAKSHDWEEP">LAKSHDWEEP</option>
+                                          <option value="DAMAN &amp; DIU">DAMAN &amp; DIU</option>
+                                          <option value="DADRA &amp; NAGAR">DADRA &amp; NAGAR</option>
+                                          <option value="CHANDIGARH">CHANDIGARH</option>
+                                          <option value="ANDAMAN &amp; NICOBAR">ANDAMAN &amp; NICOBAR</option>
+                                          <option value="UTTARANCHAL">UTTARANCHAL</option>
+                                          <option value="JHARKHAND">JHARKHAND</option>
+                                          <option value="CHATTISGARH">CHATTISGARH</option>
+                                      </select>
+                                    </div>
+                                    </div>
+                                    <div class="col-lg-3 col-md-3 col-sm-12">
+                                    <div class="form-group">
+                                      <label for="inputState">Select City</label>
+                                      <select id="inputState1" class="form-control dacorate">
+                                      <option value="">Select City</option>
+                                      </select>
+                                    </div>
+                                    </div>
+                                    <div class="col-lg-3 col-md-3 col-sm-12">
+                                    <div class="form-group">
+                                      <label for="inputState">House</label>
+                                      <select id="inputState2" class="form-control dacorate">
+                                      <option value="">Type</option>
+                                      <option value="">House</option>
+                                      <option value="">Villa</option>
+                                      </select>
+                                    </div>
+                                    </div>
+                                    <div class="col-lg-3 col-md-3 col-sm-12">
+                                        <div class="form-group">
+                                          <label for="inputState">Bedrooms</label>
+                                          <select id="inputState3" class="form-control dacorate">
+                                          <option value="">1</option>
+                                          <option value="">2</option>
+                                          <option value="">3</option>
+                                          <option value="">4</option>
+                                          <option value="">5</option>
+                                          </select>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3 col-md-3 col-sm-12">
+                                      <a href="javascript:;" class="btn btn-white btn-read-more">Find</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+      <div id="industrial" class="container tab-pane">
+         <br>
+         <div class="submit-address dashboard-list">
+         <form method="GET">
+                            <div class="search-contents-sidebar">
+                                <div class="row pad-2">
+                                    <div class="col-lg-3 col-md-3 col-sm-12">
+                                    <div class="form-group">
+                                      <label for="inputState">Select State</label>
+                                      <select id="inputState" class="form-control dacorate">
+                                      <option value="">Select State</option>
+                                          <option value="ANDHRA PRADESH">ANDHRA PRADESH</option>
+                                          <option value="ASSAM">ASSAM</option>
+                                          <option value="ARUNACHAL PRADESH">ARUNACHAL PRADESH</option>
+                                          <option value="BIHAR">BIHAR</option>
+                                          <option value="GUJRAT">GUJRAT</option>
+                                          <option value="HARYANA">HARYANA</option>
+                                          <option value="HIMACHAL PRADESH">HIMACHAL PRADESH</option>
+                                          <option value="JAMMU &amp; KASHMIR">JAMMU &amp; KASHMIR</option>
+                                          <option value="KARNATAKA">KARNATAKA</option>
+                                          <option value="KERALA">KERALA</option>
+                                          <option value="MADHYA PRADESH">MADHYA PRADESH</option>
+                                          <option value="MAHARASHTRA">MAHARASHTRA</option>
+                                          <option value="MANIPUR">MANIPUR</option>
+                                          <option value="MEGHALAYA">MEGHALAYA</option>
+                                          <option value="MIZORAM">MIZORAM</option>
+                                          <option value="NAGALAND">NAGALAND</option>
+                                          <option value="ORISSA">ORISSA</option>
+                                          <option value="PUNJAB">PUNJAB</option>
+                                          <option value="RAJASTHAN">RAJASTHAN</option>
+                                          <option value="SIKKIM">SIKKIM</option>
+                                          <option value="TAMIL NADU">TAMIL NADU</option>
+                                          <option value="TRIPURA">TRIPURA</option>
+                                          <option value="UTTAR PRADESH">UTTAR PRADESH</option>
+                                          <option value="WEST BENGAL">WEST BENGAL</option>
+                                          <option value="DELHI">DELHI</option>
+                                          <option value="GOA">GOA</option>
+                                          <option value="PONDICHERY">PONDICHERY</option>
+                                          <option value="LAKSHDWEEP">LAKSHDWEEP</option>
+                                          <option value="DAMAN &amp; DIU">DAMAN &amp; DIU</option>
+                                          <option value="DADRA &amp; NAGAR">DADRA &amp; NAGAR</option>
+                                          <option value="CHANDIGARH">CHANDIGARH</option>
+                                          <option value="ANDAMAN &amp; NICOBAR">ANDAMAN &amp; NICOBAR</option>
+                                          <option value="UTTARANCHAL">UTTARANCHAL</option>
+                                          <option value="JHARKHAND">JHARKHAND</option>
+                                          <option value="CHATTISGARH">CHATTISGARH</option>
+                                      </select>
+                                    </div>
+                                    </div>
+                                    <div class="col-lg-3 col-md-3 col-sm-12">
+                                    <div class="form-group">
+                                      <label for="inputState">Select City</label>
+                                      <select id="inputState1" class="form-control dacorate">
+                                      <option value="">Select City</option>
+                                      </select>
+                                    </div>
+                                    </div>
+                                    <div class="col-lg-3 col-md-3 col-sm-12">
+                                    <div class="form-group">
+                                      <label for="inputState">Property Type</label>
+                                      <select id="inputState2" class="form-control dacorate">
+                                      <option value="">Type</option>
+                                      <option value="">House</option>
+                                      <option value="">Villa</option>
+                                      </select>
+                                    </div>
+                                    </div>
+                                    <div class="col-lg-3 col-md-3 col-sm-12">
+                                        <div class="form-group">
+                                          <label for="inputState">Bedrooms</label>
+                                          <select id="inputState3" class="form-control dacorate">
+                                          <option value="">1</option>
+                                          <option value="">2</option>
+                                          <option value="">3</option>
+                                          <option value="">4</option>
+                                          <option value="">5</option>
+                                          </select>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3 col-md-3 col-sm-12">
+                                      <a href="javascript:;" class="btn btn-white btn-read-more">Find</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+            </div>
+                      </div>
+
+                      <div id="residential" class="container tab-pane">
+         <br>
+         <div class="submit-address dashboard-list">
+         <form method="GET">
+                            <div class="search-contents-sidebar">
+                                <div class="row pad-2">
+                                    <div class="col-lg-3 col-md-3 col-sm-12">
+                                    <div class="form-group">
+                                      <label for="inputState">Select State</label>
+                                      <select id="inputState" class="form-control dacorate">
+                                      <option value="">Select State</option>
+                                          <option value="ANDHRA PRADESH">ANDHRA PRADESH</option>
+                                          <option value="ASSAM">ASSAM</option>
+                                          <option value="ARUNACHAL PRADESH">ARUNACHAL PRADESH</option>
+                                          <option value="BIHAR">BIHAR</option>
+                                          <option value="GUJRAT">GUJRAT</option>
+                                          <option value="HARYANA">HARYANA</option>
+                                          <option value="HIMACHAL PRADESH">HIMACHAL PRADESH</option>
+                                          <option value="JAMMU &amp; KASHMIR">JAMMU &amp; KASHMIR</option>
+                                          <option value="KARNATAKA">KARNATAKA</option>
+                                          <option value="KERALA">KERALA</option>
+                                          <option value="MADHYA PRADESH">MADHYA PRADESH</option>
+                                          <option value="MAHARASHTRA">MAHARASHTRA</option>
+                                          <option value="MANIPUR">MANIPUR</option>
+                                          <option value="MEGHALAYA">MEGHALAYA</option>
+                                          <option value="MIZORAM">MIZORAM</option>
+                                          <option value="NAGALAND">NAGALAND</option>
+                                          <option value="ORISSA">ORISSA</option>
+                                          <option value="PUNJAB">PUNJAB</option>
+                                          <option value="RAJASTHAN">RAJASTHAN</option>
+                                          <option value="SIKKIM">SIKKIM</option>
+                                          <option value="TAMIL NADU">TAMIL NADU</option>
+                                          <option value="TRIPURA">TRIPURA</option>
+                                          <option value="UTTAR PRADESH">UTTAR PRADESH</option>
+                                          <option value="WEST BENGAL">WEST BENGAL</option>
+                                          <option value="DELHI">DELHI</option>
+                                          <option value="GOA">GOA</option>
+                                          <option value="PONDICHERY">PONDICHERY</option>
+                                          <option value="LAKSHDWEEP">LAKSHDWEEP</option>
+                                          <option value="DAMAN &amp; DIU">DAMAN &amp; DIU</option>
+                                          <option value="DADRA &amp; NAGAR">DADRA &amp; NAGAR</option>
+                                          <option value="CHANDIGARH">CHANDIGARH</option>
+                                          <option value="ANDAMAN &amp; NICOBAR">ANDAMAN &amp; NICOBAR</option>
+                                          <option value="UTTARANCHAL">UTTARANCHAL</option>
+                                          <option value="JHARKHAND">JHARKHAND</option>
+                                          <option value="CHATTISGARH">CHATTISGARH</option>
+                                      </select>
+                                    </div>
+                                    </div>
+                                    <div class="col-lg-3 col-md-3 col-sm-12">
+                                    <div class="form-group">
+                                      <label for="inputState">Select City</label>
+                                      <select id="inputState1" class="form-control dacorate">
+                                      <option value="">Select City</option>
+                                      </select>
+                                    </div>
+                                    </div>
+                                    <div class="col-lg-3 col-md-3 col-sm-12">
+                                    <div class="form-group">
+                                      <label for="inputState">House</label>
+                                      <select id="inputState2" class="form-control dacorate">
+                                      <option value="">Type</option>
+                                      <option value="">House</option>
+                                      <option value="">Villa</option>
+                                      </select>
+                                    </div>
+                                    </div>
+                                    <div class="col-lg-3 col-md-3 col-sm-12">
+                                        <div class="form-group">
+                                          <label for="inputState">Bedrooms</label>
+                                          <select id="inputState3" class="form-control dacorate">
+                                          <option value="">1</option>
+                                          <option value="">2</option>
+                                          <option value="">3</option>
+                                          <option value="">4</option>
+                                          <option value="">5</option>
+                                          </select>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3 col-md-3 col-sm-12">
+                                      <a href="javascript:;" class="btn btn-white btn-read-more">Find</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+            </div>
+                      </div>
+
+      
+   </div>
+</div>
         
         <div class="row">
           <?php foreach ($props as $k => $v): ?>
