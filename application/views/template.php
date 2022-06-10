@@ -76,17 +76,19 @@
                         <li class="nav-item"><a class="nav-link" href="<?= base_url() ?>">Home</a></li>
                         <li class="nav-item"><a class="nav-link" href="<?= base_url('about') ?>">About Us</a></li>
                         <li class="nav-item"><a class="nav-link" href="<?= base_url('gallery') ?>">Gallery</a></li>
-                        <li class="nav-item dropdown active">
-                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                Properties
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Properties
                             </a>
                             <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                            <li><a class="dropdown-item" href="<?= base_url('commercial-properties') ?>">Commercial</a></li>
-                            <li><a class="dropdown-item" href="<?= base_url('commercial-properties') ?>">Industrial</a></li>
-                                <li><a class="dropdown-item" href="<?= base_url('residential-properties') ?>">Residential</a></li>
-                                
+                                <li class="dropdown">
+                                    <a class="dropdown-item" href="<?= base_url('commercial-properties') ?>">Rent</a>
+                                </li>
+                                <li class="dropdown">
+                                    <a class="dropdown-item" href="<?= base_url('commercial-properties') ?>">Sale</a>
+                                </li>
                             </ul>
-                        </li>
+                         </li>
                         <li class="nav-item"><a class="nav-link" href="<?= base_url('contact') ?>">Contact Us</a></li>
                     </ul>
                     <ul class="navbar-nav ml-auto">
