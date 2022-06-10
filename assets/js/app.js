@@ -29,6 +29,24 @@ $(function () {
     var winHeight = $(window).height();
     $('.dashboard-nav').css('min-height', winHeight);
 
+    // aos animation
+
+    $(document).ready(function () {
+        AOS.init();
+        $('#carouselExampleIndicators').on('slid.bs.carousel', function () {
+            $(this).find('div.active').find('h2').attr("data-aos", "zoom-in-up");
+            AOS.init();
+        });
+     });
+    
+     //refresh animations
+     $(window).on('load', function() {
+        AOS.refresh();
+     });
+    // AOS.init({
+    //     duration: 1000,
+    //   })
+        
 
     // Magnify activation
     $('.portfolio-item').magnificPopup({
@@ -135,22 +153,22 @@ $(function () {
     })(jQuery);
 
     // Page scroller initialization.
-    $.scrollUp({
-        scrollName: 'page_scroller',
-        scrollDistance: 300,
-        scrollFrom: 'top',
-        scrollSpeed: 500,
-        easingType: 'linear',
-        animation: 'fade',
-        animationSpeed: 200,
-        scrollTrigger: false,
-        scrollTarget: false,
-        scrollText: '<i class="fa fa-chevron-up"></i>',
-        scrollTitle: false,
-        scrollImg: false,
-        activeOverlay: false,
-        zIndex: 2147483647
-    });
+    // $.scrollUp({
+    //     scrollName: 'page_scroller',
+    //     scrollDistance: 300,
+    //     scrollFrom: 'top',
+    //     scrollSpeed: 500,
+    //     easingType: 'linear',
+    //     animation: 'fade',
+    //     animationSpeed: 200,
+    //     scrollTrigger: false,
+    //     scrollTarget: false,
+    //     scrollText: '<i class="fa fa-chevron-up"></i>',
+    //     scrollTitle: false,
+    //     scrollImg: false,
+    //     activeOverlay: false,
+    //     zIndex: 2147483647
+    // });
 
     // Counter
     function isCounterElementVisible($elementToBeChecked) {
@@ -408,3 +426,6 @@ $(function () {
         }
     }).trigger("resize");
 })(jQuery);
+
+
+// stikey header

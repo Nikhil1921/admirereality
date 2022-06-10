@@ -1,36 +1,57 @@
 <?php defined('BASEPATH') OR exit('No direct script access allowed'); ?>
-<div class="banner" id="banner">
-          <!-- <button type="button" class="city-btn"></button> -->
-    <div id="carous" class="carousel slide slick-carousel" data-ride="carousel" data-interval="10">
-        <div class="carousel-inner banner-slider-inner">
-            <div class="carousel-item banner-max-height active">
-                <img class="d-block w-100 h-100" src="<?= asset()?>img/banner/banner-2.jpg" alt="banner">
-                <div class="carousel-content container banner-info text-center">
-                    <h2 class="text-uppercase">Find Properties near you</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod 1</p>
-                </div>
-            </div>
-        </div>
-        <div class="carousel-inner banner-slider-inner">
-            <div class="carousel-item banner-max-height active">
-                <img class="d-block w-100 h-100" src="<?= asset()?>img/banner/banner-2.jpg" alt="banner">
-                <div class="carousel-content container banner-info text-center">
-                    <h2 class="text-uppercase">Find Properties near you</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod 2</p>
-                </div>
-            </div>
-        </div>
-        <div class="carousel-inner banner-slider-inner">
-            <div class="carousel-item banner-max-height active">
-                <img class="d-block w-100 h-100" src="<?= asset()?>img/banner/banner-2.jpg" alt="banner">
-                <div class="carousel-content container banner-info text-center">
-                    <h2 class="text-uppercase">Find Properties near you</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod 3</p>
-                </div>
-            </div>
-        </div>
-    </div>
 
+<div class="banner" id="banner">
+<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel" data-interval="4000">
+  <ol class="carousel-indicators">
+    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
+  </ol>
+  <div class="carousel-inner">
+  <div class="carousel-item banner-max-height active">
+      <img class="d-block w-100 h-100" src="<?= asset()?>img/banner/banner-4.jpg" alt="banner">
+      <div class="carousel-content container banner-info text-center">
+      <img class="d-block w-100 h-100 text-center banner-logo" src="<?= asset()?>img/logo.png" alt="banner">
+          <h2 class="text-uppercase text-white animation4" data-aos="fade-right">Welcome To Admire Reality</h2>
+      </div>
+  </div>
+  <div class="carousel-item banner-max-height">
+      <img class="d-block w-100 h-100" src="<?= asset()?>img/banner/banner-5.jpg" alt="banner">
+      <div class="carousel-content container banner-info text-center">
+          <h2 class="text-uppercase text-white animation1" data-aos="fade-down-right">Find Commercial Properties</h2>
+          <a href="javascript:;" class="btn btn-white btn-read-more">Rent</a>
+          <a href="javascript:;" class="btn btn-white btn-read-more">Sale</a>
+      </div>
+  </div>
+  <div class="carousel-item banner-max-height">
+      <img class="d-block w-100 h-100" src="<?= asset()?>img/banner/banner-6.jpg" alt="banner">
+      <div class="carousel-content container banner-info text-center">
+          <h2 class="text-uppercase text-white animation2" data-aos="fade-down-left">Find Industrial Properties</h2>
+          <a href="javascript:;" class="btn btn-white btn-read-more">Rent</a>
+          <a href="javascript:;" class="btn btn-white btn-read-more">Sale</a>
+      </div>
+  </div>
+
+  <div class="carousel-item banner-max-height">
+      <img class="d-block w-100 h-100" src="<?= asset()?>img/banner/banner-7.jpg" alt="banner">
+      <div class="carousel-content container banner-info text-center">
+          <h2 class="text-uppercase text-white animation3" data-aos="fade-left">Find Residential Properties</h2>
+          <a href="javascript:;" class="btn btn-white btn-read-more">Rent</a>
+          <a href="javascript:;" class="btn btn-white btn-read-more">Sale</a>
+      </div>
+  </div>
+  
+  </div>
+  <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
 </div>
 
 
@@ -273,7 +294,7 @@
         <div class="row">
             <div class="col-xl-5 col-lg-5 col-md-12 col-sm-12 col-xs-12">
         <div class="about-slider-box simple-slider">
-          <img class="d-block w-100" src="assets/img/about.jpg" alt="about">
+          <img class="d-block w-100" src="assets/img/about.png" alt="about">
         </div>
       </div>
       <div class="col-xl-7 col-lg-7 col-md-12 col-sm-12 col-xs-12">
@@ -807,8 +828,8 @@
 
         <div class="dashboard-content mt-5">
           <div class="dashboard-list">
-            <h3 class="heading">Customer Review</h3>
-            <div class="dashboard-message contact-2 bdr clearfix">
+            <h3 class="heading bg-grea-3">Customer Review</h3>
+            <div class="dashboard-message contact-2 bdr bg-white clearfix">
               <div class="row">
                 <div class="col-lg-12 col-md-12">
                   <form action="#" method="GET" enctype="multipart/form-data">

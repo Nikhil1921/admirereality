@@ -4,15 +4,15 @@
         <div class="row">
             <div class="col-xl-5 col-lg-5 col-md-12 col-sm-12 col-xs-12">
                 <div class="about-slider-box simple-slider">
-                    <img class="d-block w-100 about-image" src="<?= asset() ?>img/about.jpg" alt="about">
+                    <img class="d-block w-100 about-image" src="<?= asset() ?>img/about.png" alt="about">
                 </div>
             </div>
             <div class="col-xl-7 col-lg-7 col-md-12 col-sm-12 col-xs-12">
 
                 <div class="about-text">
                     <h3>Welcome to Admire Reality</h3>
-                    <p>we offer outstanding priority offerings in first-class residential, commercial & industrial properties as well as in rentals and leasing. We operate in Ahmedabad, Gandhinagar and surrounding areas. We help offer the best investment opportunities and options with a targeted return on investment (ROI). Offer investment opportunities when there is an opportunity for some price increases. Activation and enabling zero queries and cleaning of tiles and properties. Our support in buying, selling and renting real estate. We are working on culture and modules for client work.</p>
-                    <p class="mb-0">As of today, we are serving our clients as Real Estate Consultant, Real Estate Contractor, Property Legal Adviser and Property Loan Consultant. You can contact us for queries related to various properties including residential, commercials, and industrial. Our experience is our biggest USP that makes us reliable.</p>
+                    <p>we offer outstanding priority offerings in first-class residential, commercial & industrial properties as well as in rentals and leasing. We operate in Ahmedabad, Gandhinagar and surrounding areas from last 15 years. We help offer the best investment opportunities and options with a targeted return on investment (ROI). Offer investment opportunities when there is an opportunity for some price increases. Activation and enabling zero queries and cleaning of tiles and properties. Our support in buying, selling and renting real estate. We are working on culture and modules for client work.</p>
+                    <p class="mb-0">As of today, we are serving our clients as Real Estate Consultant, Real Estate Contractor, Property Legal Adviser and Property Loan Consultant. You can contact us for queries related to various properties including residential, commercials, and industrial. Our experience is our biggest USP that makes us reliable. we are providing various types of warehouse's for rent and sale as per client requirement</p>
                 </div>
             </div>
         </div>
@@ -115,8 +115,8 @@
         </div>
         <div class="dashboard-content mt-5">
           <div class="dashboard-list">
-            <h3 class="heading">Customer Review</h3>
-            <div class="dashboard-message contact-2 bdr clearfix">
+            <h3 class="heading bg-grea-3">Customer Review</h3>
+            <div class="dashboard-message contact-2 bg-white bdr clearfix">
               <div class="row">
                 <div class="col-lg-12 col-md-12">
                   <form action="#" method="GET" enctype="multipart/form-data">
