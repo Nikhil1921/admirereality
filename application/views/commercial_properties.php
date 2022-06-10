@@ -54,9 +54,12 @@
                 <option value="name_asc" <?= ($s == 'name_asc') ? 'selected' : '' ?>>Property Name:A to Z</option>
                 <option value="name_desc" <?= ($s == 'name_desc') ? 'selected' : '' ?>>Property Name:Z to A</option>
               </select>
+              <a href="javascript:;" class="btn btn-white btn-read-more">Rent</a>
+              <a href="javascript:;" class="btn btn-white btn-read-more">Sale</a>
             </form>
           </div>
         </div>
+        
         <div class="row">
           <?php foreach ($props as $k => $v): ?>
           <div class="col-lg-6 col-md-6 col-sm-12">

@@ -22,6 +22,7 @@
     <link rel="shortcut icon" href="<?= asset() ?>img/favicon.png" type="image/x-icon" >
     <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Raleway:300,400,500,600,300,700">
     <link rel="stylesheet" type="text/css" href="<?= asset() ?>css/ie10-viewport-bug-workaround.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script  src="<?= asset() ?>js/ie-emulation-modes-warning.js"></script>
 
     <script type='text/javascript' src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDiWWB6yJd6ilpII5N89O-vXAo2eXiVD9g&sensor=false&libraries=places"></script>
@@ -61,7 +62,7 @@
         </div>
     </header> -->
     
-    <header class="main-header fixed-header-2">
+    <header class="main-header fixed-header fixed-header-2">
         <div class="container">
             <nav class="navbar navbar-expand-lg navbar-light">
                 <a class="navbar-brand company-logo" href="<?= base_url()?>">
@@ -71,39 +72,39 @@
                 <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav header-ml m-auto">
+                    <ul class="navbar-nav header-ml ml-auto">
                         <li class="nav-item"><a class="nav-link" href="<?= base_url() ?>">Home</a></li>
                         <li class="nav-item"><a class="nav-link" href="<?= base_url('about') ?>">About Us</a></li>
-                        <li class="nav-item"><a class="nav-link" href="<?= base_url('gallery') ?>">Gallery Us</a></li>
+                        <li class="nav-item"><a class="nav-link" href="<?= base_url('gallery') ?>">Gallery</a></li>
                         <li class="nav-item dropdown active">
                             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                 Properties
                             </a>
                             <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <li><a class="dropdown-item" href="<?= base_url('commercial-properties') ?>">Commercial</a></li>
+                            <li><a class="dropdown-item" href="<?= base_url('commercial-properties') ?>">Industrial</a></li>
                                 <li><a class="dropdown-item" href="<?= base_url('residential-properties') ?>">Residential</a></li>
-                                <li><a class="dropdown-item" href="<?= base_url('commercial-properties') ?>">Commercial</a></li>
+                                
                             </ul>
                         </li>
                         <li class="nav-item"><a class="nav-link" href="<?= base_url('contact') ?>">Contact Us</a></li>
                     </ul>
                     <ul class="navbar-nav ml-auto">
                         <li class="nav-item ">
-                            <?php if (!empty($this->session->userdata('role'))): ?>
-                            <a class="nav-link" href="<?= base_url('logout') ?>">
-                                <i class="flaticon-logout"></i>Sign Out
+                            
+                            <a class="nav-link property-btn" href="<?= base_url('') ?>">
+                                <i class="lnr lnr-download"></i> Download Brochure
                             </a>
-                            <?php else: ?>
-                            <a class="nav-link property-btn" href="<?= base_url('login') ?>">
-                                <i class="flaticon-logout"></i>Post Property
-                            </a>
-                            <?php endif ?>
+                            
                         </li>
                     </ul>
                 </div>
             </nav>
         </div>
     </header>
+    <div class="top-head">
     <?php if (!empty($sub_banner)): ?>
+
     <div class="sub-banner">
         <div class="container breadcrumb-area">
             <div class="breadcrumb-areas">
@@ -129,8 +130,9 @@
                             <ul>
                                 <li><a href="#" class="facebook-bg"><i class="fa fa-facebook"></i></a></li>
                                 <li><a href="#" class="twitter-bg"><i class="fa fa-twitter"></i></a></li>
-                                <li><a href="#" class="google-bg"><i class="fa fa-google-plus"></i></a></li>
+                                <li><a href="#" class="google-bg"><i class="fa fa-youtube-play"></i></a></li>
                                 <li><a href="#" class="linkedin-bg"><i class="fa fa-linkedin"></i></a></li>
+                                <li><a href="#" class="instagram-bg"><i class="fa fa-instagram"></i></a></li>
                             </ul>
                         </div>
                     </div>
@@ -185,26 +187,41 @@
                         <h4>Subscribe</h4>
                         <ul class="contact-info">
                             <li>
-                                <i class="flaticon-pin"></i>414, Lilamani Corporate Heights, Opp. Ramdev Tekra BRTS, Nava Vadaj, Ahmedabad, Gujarat 380013
+                                <i class="flaticon-pin"></i>A-1009,Mondeal Hights,Nr. Panchratna Party Plot ,S.G highway Ahmedabad, Gujarat 380013
                             </li>
                             <li>
-                                <i class="flaticon-mail"></i><a href="mailto:info@buildpillar.com">info@buildpillar.com</a>
+                                <i class="flaticon-mail"></i><a href="mailto:demo@gmail.com">info@admirereality.com</a><br><a href="mailto:demo@gmail.com">admirereality2022@gmail.com</a>
                             </li>
                             <li>
-                                <i class="flaticon-phone"></i><a href="tel: +91 90 95 95 94 93"> +91 90 95 95 94 93</a>
-                            </li>
-                            <li>
-                                <i class="flaticon-fax"></i> +91 90 95 95 94 93
+                                <i class="flaticon-phone"></i><a class="font-family" href="tel: +91 9998518458"> +91 99 98 51 84 58</a> <br> <a class="font-family" href="tel: +91 7990126852"> +91 79 90 12 68 52</a>
                             </li>
                         </ul>
                     </div>
                 </div>
                 <div class="col-xl-12 col-lg-12">
-                    <p class="copy sub-footer">© 2019 <a href="https://densetek.com" target="_blank">Densetek Infoteck.</a> Trademarks and brands are the property of their respective owners.</p>
+                    <p class="copy sub-footer">© 2022 <a href="https://amazewebsolutions.com/" target="_blank">Amaze web solution.</a> Trademarks and brands are the property of their respective owners.</p>
                 </div>
             </div>
         </div>
     </footer>
+    <!-- call -->
+    <div class="phone quick-alo-phone">
+        <a href="tel:+917940062405">
+            <div class="quick-alo-ph-circle"></div>
+            <div class="quick-alo-ph-circle-fill"></div>
+            <div class="quick-alo-ph-img-circle"></div>
+        </a>
+    </div>
+    <!-- Whatsapp -->
+    <a href="https://api.whatsapp.com/send?phone=+91 9428505555&amp;text=Hello" class="float" target="_blank">
+        <i class="fa fa-whatsapp my-float"></i>
+    </a>
+
+    <!-- INSTAGRAM -->
+    <a href="https://www.instagram.com/" class="float1" target="_blank">
+        <i class="fa fa-instagram my-float1"></i>
+    </a>
+    </div>
     <script src="<?= asset() ?>js/jquery-2.2.0.min.js"></script>
     <script src="<?= asset() ?>js/popper.min.js"></script>
     <script src="<?= asset() ?>js/bootstrap.min.js"></script>
@@ -231,5 +248,6 @@
     <script  src="<?= asset() ?>js/app.js"></script>
     <script  src="<?= asset() ?>js/f_app.js"></script>
     <script  src="<?= asset() ?>js/ie10-viewport-bug-workaround.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 </body>
 </html>

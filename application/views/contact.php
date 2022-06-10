@@ -14,7 +14,7 @@
       </div>
       <div class="contact_text">
         <span>Address</span>
-        <p>1th Floor-102,Times Square</p>
+        <p>A-1009,Mondeal Hights,Nr. Panchratna Party Plot ,S.G highway Ahmedabad, Gujarat 380013</p>
       </div>
     </div>
   </div>
@@ -25,7 +25,8 @@
       </div>
       <div class="contact_text">
         <span>Email Address</span>
-        <a href="mailto:demo@gmail.com">demo@gmail.com</a>
+        <a href="mailto:demo@gmail.com">info@admirereality.com</a><br>
+        <a href="mailto:demo@gmail.com">admirereality2022@gmail.com</a>
       </div>
     </div>
   </div>
@@ -37,7 +38,8 @@
       <div class="contact_text">
         <span>Phone</span>
         <p>
-          <a href="tel:999999999">+91 999 999 9999</a>
+        <a class="font-family" href="tel: +91 9998518458"> +91 99 98 51 84 58</a> <br> 
+        <a class="font-family" href="tel: +91 7990126852"> +91 79 90 12 68 52</a>
         </p>
       </div>
     </div>
@@ -78,7 +80,7 @@
                 </div>
                 <div class="col-lg-12 mt-5">
                     <div class="map">
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3670.94698792843!2d72.5692160142832!3d23.062405020626922!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395e847f7d645aad%3A0x3115d4acca1c54cd!2sDensetek%20Infotech!5e0!3m2!1sen!2sin!4v1653652053896!5m2!1sen!2sin" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3672.0190256019823!2d72.50253841399757!3d23.023073643870443!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395e9b3af1398917%3A0xcf4a42713c8c65b5!2sMondeal%20Heights%2C%20Ramdev%20Nagar%2C%20Ahmedabad%2C%20Gujarat%20380015!5e0!3m2!1sen!2sin!4v1654839861807!5m2!1sen!2sin" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                     </div>
                 </div>
 </div>
